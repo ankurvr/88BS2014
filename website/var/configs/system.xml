@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<zend-config>
+    <general>
+        <debug>1</debug>
+        <debug_ip></debug_ip>
+        <devmode>1</devmode>
+        <timezone>Asia/Kolkata</timezone>
+        <viewSuffix>php</viewSuffix>
+        <language>en</language>
+        <validLanguages>en,it,de,fr</validLanguages>
+    </general>
+    <database>
+        <adapter>PDO_MYSQL</adapter>
+        <params>
+            <host>192.168.1.102</host>
+            <username>root</username>
+            <password></password>
+            <dbname>mytest</dbname>
+        </params>
+    </database>
+</zend-config>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<changelog>
+    <!--
+        Log Format
+
+        <release>
+            <version>TagYourLife Version 0.1 12.10.16</version>
+
+            <updates>
+                <update>
+                    <title></title>
+                    <description></description>
+                    <sql></sql>
+                </update>
+            </updates>
+
+            .........
+
+            <bugs>
+                <bug>
+                    <title></title>
+                    <description></description>
+                    <sql><sql>
+                </bug>
+            </bugs>
+
+            .........
+
+            <actions>
+                <action>
+                    <title></title>
+                    <description></description>
+                    <function></function>
+                    <url></url>
+                </action>
+            </actions>
+
+            .........
+
+            <features>
+                <feature>
+                    <title></title>
+                    <description></description>
+                    <sql><sql>
+                </feature>
+            </features>
+
+            .........
+
+
+        </release>
+    -->
+</changelog>

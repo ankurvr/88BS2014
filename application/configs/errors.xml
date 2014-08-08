@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BASIC from 0 to 199 -->
+<Errors>
+	<Error code="001" key="wrong_input_parameter">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Parametri errati o mancanti nella richiesta. Uno o pi&ugrave; campi richiesti &egrave; assenti.]]></LongMessage>
+			<ShortMessage><![CDATA[Parametri errati]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Missing or incorrect parameters in the request. One or more required fields is missing.]]></LongMessage>
+			<ShortMessage><![CDATA[Missing or incorrect parameters.]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="002" key="action_error">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il campo Action contiene un valore non consentito. I valori ammissibili sono: Add, Edit, Delete]]></LongMessage>
+			<ShortMessage><![CDATA[Campo Action errato.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Action field contains a value not allowed. Accepted values are: Add, Edit, Delete]]></LongMessage>
+			<ShortMessage><![CDATA[Error in Action Field]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="003" key="api_wrong_token">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Error in token validating the request, check token field]]></LongMessage>
+			<ShortMessage><![CDATA[Error in token field]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="004" key="over_quota_api_request">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[&Egrave; stato superata la quota consentita di oggetti nella richiesta]]></LongMessage>
+			<ShortMessage><![CDATA[Errore quota api.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Over quota request]]></LongMessage>
+			<ShortMessage><![CDATA[Over quota request]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="010" key="error_deleting_products">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Non &egrave; stato possbile rimuovere il prodotto dal sistema]]></LongMessage>
+			<ShortMessage><![CDATA[Delete non completata]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[It is impossible to perform the request for current product]]></LongMessage>
+			<ShortMessage><![CDATA[Unable to delete product]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="199" key="">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+	</Error>
+
+<!-- TYPE from 600 to 630 -->
+	<Error code="600" key="mismatch_parameter_type">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Parametri errati. Uno o pi&ugrave; campi richiesti non rispettano la specifica sul tipo.]]></LongMessage>
+			<ShortMessage><![CDATA[Parametri errati]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Incorrect parameters in the request. One or more required fields not conform to type specifics.]]></LongMessage>
+			<ShortMessage><![CDATA[Incorrect parameters.]]></ShortMessage>
+		</Value>
+	</Error>
+
+<!-- HTTP -->
+<Error code="204" key="no_content">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[La richiesta non ha prodotto nessun risultato. Controllare i parametri in input]]></LongMessage>
+			<ShortMessage><![CDATA[Nessun risultato]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The request did not produce any results. Check the input parameters]]></LongMessage>
+			<ShortMessage><![CDATA[No results]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="400" key="bad_request">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[La richiesta non pu&ograve; essere compresa dal server a causa di sintassi errata.]]></LongMessage>
+			<ShortMessage><![CDATA[Errore nella sintassi della richiesta.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The request could not be understood by the server due to malformed syntax.]]></LongMessage>
+			<ShortMessage><![CDATA[Error in request syntax]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="401" key="unauthorized">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[La richiesta richiede l'autenticazione dell'utente. Nessuna autenticazione utente nella richiesta.]]></LongMessage>
+			<ShortMessage><![CDATA[Parametri di autenticazione mancanti]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The request requires user authentication. No user authentication in request.]]></LongMessage>
+			<ShortMessage><![CDATA[Missing authentication parameters]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="403" key="forbidden">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[La richiesta non pu&ograve; essere processata perch&egrave; non si ha autorit&agrave; sul dominio richiesto]]></LongMessage>
+			<ShortMessage><![CDATA[Richiesta per un dominio errato.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The server understood the request, but is refusing to fulfill it.]]></LongMessage>
+			<ShortMessage><![CDATA[No permission to process request.]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="404" key="not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il server non ha trovato nulla corrispondente per la Request-URI.]]></LongMessage>
+			<ShortMessage><![CDATA[Errore nell'end-point della richiesta.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The server has not found anything matching the Request-URI.]]></LongMessage>
+			<ShortMessage><![CDATA[End-point request error]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="405" key="method_not_allowed">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il metodo specificato nella Request-Line non &egrave; consentito per la risorsa identificata dal Request-URI.]]></LongMessage>
+			<ShortMessage><![CDATA[Richiesta metodo non consentito.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The method specified in the Request-Line is not allowed for the resource identified by the Request-URI.]]></LongMessage>
+			<ShortMessage><![CDATA[Request method not allowed.]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="406" key="not_acceptable">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il server non &egrave; in grado di processare la richiesta a causa di errori nell'header.]]></LongMessage>
+			<ShortMessage><![CDATA[Richiesta non accetatbile.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request. ]]></LongMessage>
+			<ShortMessage><![CDATA[Request not acceptable for header mismatch.]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="500" key="internal_server_error">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Errore interno dell'applicazione. Il server non &egrave; in grado di generare una risposta.]]></LongMessage>
+			<ShortMessage><![CDATA[Errore interno dell'applicazione]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The server encountered an unexpected condition which prevented it from fulfilling the request. ]]></LongMessage>
+			<ShortMessage><![CDATA[Internal Server Error.]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="501" key="not_implemented">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il server non supporta la funzionalit&agrave; richiesta.]]></LongMessage>
+			<ShortMessage><![CDATA[Richiesta non supportata.]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The server does not support the functionality required to fulfill the request.]]></LongMessage>
+			<ShortMessage><![CDATA[Request method not supported]]></ShortMessage>
+		</Value>
+	</Error>
+
+<!-- STANDARD from 700 to 1000 -->
+
+<!-- Insert Update Products from 1100 to 1500-->
+	<Error code="1000" key="product_already_exist">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product already exists]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1001" key="product_bad_handlingTime">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad handling time]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1002" key="product_bad_discount">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad discount]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1003" key="product_bad_lowerDate">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad product lower date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1004" key="product_sku_invalid">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Invalid product sku]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1005" key="product_bad_title_max_length">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Product title has invalid max length]]></LongMessage>
+			<ShortMessage><![CDATA[Invalid product title]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1006" key="product_bad_description">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad description]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1007" key="product_bad_price">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad price]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1008" key="product_bad_quantity">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product Bad quantity]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1009" key="product_bad_name">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad product name]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1010" key="product_bad_taxrate">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad tax rate]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1011" key="product_bad_manufacturers">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad manufacturer]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1012" key="product_bad_ean">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad ean]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1013" key="product_bad_mpn">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad mpn]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1014" key="product_bad_address">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Product bad address]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1015" key="product_bad_mainimage_url">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad main image url]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1016" key="product_bad_image_url">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad image url]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1017" key="product_bad_discount_price">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad discount price]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1018" key="product_bad_promotion_start_date">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad promotion start date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1019" key="product_bad_promotion_end_date">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad promotion end date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1020" key="product_bad_available_date">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad available date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1021" key="product_bad_category_path">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Category path]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1022" key="product_bad_status">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad product status]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1023" key="product_bad_attribute_quantity">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad attribute quantity]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1024" key="product_bad_attribute_price">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Attribute Price]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1025" key="product_bad_attribute_sku">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad or missing product sku]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1026" key="product_bad_attribute_price_prefix">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[Bad attribute price prefix]]></ShortMessage>
+		</Value>
+	</Error>
+	
+	<Error code="1101" key="product_bad_id">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[MxpID non è formattato correttamente]]></LongMessage>
+			<ShortMessage><![CDATA[MxpID non è formattato correttamente]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[MxpID is not well formatted]]></LongMessage>
+			<ShortMessage><![CDATA[MxpID is not well formatted]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1102" key="product_id_missing">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[MxpID non esiste]]></LongMessage>
+			<ShortMessage><![CDATA[MxpID non esiste]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[MxpID does not exists]]></LongMessage>
+			<ShortMessage><![CDATA[MxpID does not exists]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="1100" key="">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+	</Error>
+
+<!-- Maxpho from 123456 to 654321-->
+	<Error code="123456" key="mxp_tax_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Classe di tassazione non trovata in Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Classe di tassazione incorretta]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Tax rate not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad tax rate]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="132457" key="mxp_manufaturer_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Produttore non trovata in Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Produttore incorretto]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Manufacturer not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Manufacturer]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="123458" key="mxp_country_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Zona ubicazione oggetto non trovata in Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Zona Ubicazione incorretta]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Country not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Country]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="123459" key="mxp_weight_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Unita' di misura del peso non trovata in Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Unita' di misura del peso incorretta]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Weight Class not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad weight class]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="123460" key="mxp_length_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Unita' di misura delle dimesioni del pacco non trovata in Maxpho Commerce ]]></LongMessage>
+			<ShortMessage><![CDATA[Unita' di misura delle dimesioni del pacco incorretta]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Length class not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad length class]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="123461" key="mxp_language_not_found">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Language not found into Maxpho Commerce]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Language]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="111101" key="malformed_date_atom">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[The date from is not in ATOM format]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The date from is not in ATOM format]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="111102" key="malformed_date_atom">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[The date to is not in ATOM format]]></LongMessage>
+			<ShortMessage><![CDATA[]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[The date to is not in ATOM format]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Date]]></ShortMessage>
+		</Value>
+	</Error>
+	<Error code="111103" key="malformed_page_format">
+		<Value langCode="it_IT">
+			<LongMessage><![CDATA[Il numero di pagina fornito non &egrave; un valore ammesso dal sistema]]></LongMessage>
+			<ShortMessage><![CDATA[Errore nel valore della pagina]]></ShortMessage>
+		</Value>
+		<Value langCode="en_US">
+			<LongMessage><![CDATA[Bad Page given in current request]]></LongMessage>
+			<ShortMessage><![CDATA[Bad Page given]]></ShortMessage>
+		</Value>
+	</Error>
+</Errors>
