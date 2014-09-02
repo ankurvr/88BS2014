@@ -26,4 +26,4 @@
 	 * 	@var String
 	 */
 	
-	define('TABLE_ADMINISTRATOR_LOG', cryptSwTable('administrator_log'));
+	define('TABLE_USERS', cryptSwTable('users'));

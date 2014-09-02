@@ -4,7 +4,7 @@ if (!defined('CONNECTION_CONFIG_PHP'))
 {
     define('CONNECTION_CONFIG_PHP',1);
     define('DB_DATABASE_CLASS', 'Mysqli');
-    define('DB_TABLE_PREFIX', 'kdplpm_');
+    define('DB_TABLE_PREFIX', 'bsa_');
 
     require 'configs/database_tables.php';
 
